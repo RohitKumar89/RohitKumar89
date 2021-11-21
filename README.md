@@ -11,26 +11,6 @@ H2 Database: H2 database based.<br/>
 This application will consists of four different services:
 
 <b>Product Service:</b> Provides API for managing available products ex- UrbanClap Home Services or Salon Services. By default it runs on port 8001.<br/>
-<div class="heading">
-  <h2>
-    <a href="#!/product-controller" class="toggleEndpointList" data-id="product-controller">product-controller</a>  : Product Controller
-  </h2>
-  <ul class="options">
-    <li>
-      <a href="#!/product-controller" id="endpointListTogger_product-controller" class="toggleEndpointList" data-id="product-controller" data-sw-translate="">Show/Hide</a>
-    </li>
-    <li>
-      <a href="#" class="collapseResource" data-id="product-controller" data-sw-translate="">
-        List Operations
-      </a>
-    </li>
-    <li>
-      <a href="#" class="expandResource" data-id="product-controller" data-sw-translate="">
-        Expand Operations
-      </a>
-    </li>
-  </ul>
-</div>
 
 <ul class="endpoints" id="product-controller_endpoint_list" style="">
 
