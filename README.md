@@ -61,6 +61,40 @@ This application will consists of four different services:
 
 
 <b>Order Service:</b> Provides API for managing shopping lists. By default it runs on port 8002.<br/>
+
+<div class="response" style="">
+          <h4 class="curl">Curl</h4>
+          <div class="block curl"><pre>curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{ \ 
+   "category": "HOME", \ 
+   "description": "Need an Electrician", \ 
+   "id": 1234, \ 
+   "latitude": 24.5, \ 
+   "longitude": 25.6, \ 
+   "name": "Rohit Kumar", \ 
+   "shippingAddress": "VasantKunj, Delhi" \ 
+ }' 'http://localhost:8002/order-service/'</pre></div>
+          <h4 data-sw-translate="">Request URL</h4>
+          <div class="block request_url"><pre>http://localhost:8002/order-service/</pre></div>
+          <h4 data-sw-translate="">Request Headers</h4>
+          <div class="block request_headers"><pre>{<br>  "Accept": "*/*"<br>}</pre></div>
+          <h4 data-sw-translate="">Response Body</h4>
+          <div class="block response_body hljs json"><pre class="json"><code>{
+  "<span class="hljs-attr">id</span>": <span class="hljs-number">1234</span>,
+  "<span class="hljs-attr">name</span>": <span class="hljs-string">"Rohit Kumar"</span>,
+  "<span class="hljs-attr">description</span>": <span class="hljs-string">"Need an Electrician"</span>,
+  "<span class="hljs-attr">category</span>": <span class="hljs-string">"HOME"</span>,
+  "<span class="hljs-attr">shippingAddress</span>": <span class="hljs-string">"VasantKunj, Delhi"</span>,
+  "<span class="hljs-attr">latitude</span>": <span class="hljs-number">24.5</span>,
+  "<span class="hljs-attr">longitude</span>": <span class="hljs-number">25.6</span>
+}</code></pre></div>
+          <h4 data-sw-translate="">Response Code</h4>
+          <div class="block response_code"><pre>202</pre></div>
+          <h4 data-sw-translate="">Response Headers</h4>
+          <div class="block response_headers"><pre>{<br>  "connection": "keep-alive",<br>  "content-type": "application/json",<br>  "date": "Sun, 21 Nov 2021 15:08:56 GMT",<br>  "keep-alive": "timeout=60",<br>  "transfer-encoding": "chunked",<br>  "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"<br>}</pre></div>
+        </div>
+
+
+
 <b>Admin Service:</b> Provides API for managing shopping lists. By default it runs on port 8002.<br/>
 <b>Worker Service:</b> Provides API for managing shopping lists. By default it runs on port 8002.<br/>
 <b>Payment Service:</b> Provides API for managing shopping lists. By default it runs on port 8002.<br/>
