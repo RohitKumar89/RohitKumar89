@@ -95,10 +95,14 @@ This application will consists of four different services:
 
 
 
-<b>Admin Service:</b> Provides API for managing shopping lists. By default it runs on port 8002.<br/>
-<b>Worker Service:</b> Provides API for managing shopping lists. By default it runs on port 8002.<br/>
+<H2>Task Service:</H2> Provides API for creating and managing tasks for <b>Admin and Service Providers(Prfessional/Worker)<b>. When Order will be placed by <b>Consumer</b>
+        Corresponding to that Order a task will be created in database and these tasks will be reflected to Admin and Admin will assign those tasks to respective     <b>Worker/Service Provider</b> By default it runs on port 8003.<br/>
+
 <b>Payment Service:</b> Provides API for managing shopping lists. By default it runs on port 8002.<br/>
 <b>Rating Service:</b> Provides API for managing shopping lists. By default it runs on port 8002.<br/>
+
+
+
 <b>Service discovery:</b> Netflix Eureka service that discovers and registers other service instances. By default it runs on port 8761.<br/>
 <b>API gateway:</b> Netflix Zuul API gateway that sits on the top of the product and shopping list services, providing a gateway for those services. By default it runs on port 8765.</br>
 
