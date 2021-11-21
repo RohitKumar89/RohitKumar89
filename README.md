@@ -32,6 +32,156 @@ This application will consists of four different services:
   </ul>
 </div>
 
+<ul class="endpoints" id="product-controller_endpoint_list" style="">
+
+<li class="endpoint">  <ul class="operations">
+    <li class="get operation" id="product-controller_getProductsUsingGET">
+      <div class="heading">
+        <h3>
+          <span class="http_method">
+          <a href="#!/product-controller/getProductsUsingGET" class="toggleOperation">get</a>
+          </span>
+          <span class="path">
+          <a href="#!/product-controller/getProductsUsingGET" class="toggleOperation ">/products</a>
+          </span>
+        </h3>
+        <ul class="options">
+          <li>
+          <a href="#!/product-controller/getProductsUsingGET" class="toggleOperation"><span class="markdown"><p>Get All Products </p>
+</span></a>
+          </li>
+        </ul>
+      </div>
+      <div class="content" id="product-controller_getProductsUsingGET_content" style="">
+          <div class="response-class">
+            <h4><span data-sw-translate="">Response Class</span> (<span data-sw-translate="">Status</span> 200)</h4>
+              <div class="markdown"><p>OK</p>
+</div>
+            <p><span class="model-signature"><div>
+<div>
+<ul class="signature-nav">
+  <li><a class="description-link" href="#" data-sw-translate="">Model</a></li>
+  <li><a class="snippet-link selected" href="#" data-sw-translate="">Example Value</a></li>
+</ul>
+<div>
+
+<div class="signature-container">
+  <div class="description" style="display: none;">
+      <span class="strong">Inline Model [</span><div>object</div><span class="strong">]</span>
+  </div>
+
+  <div class="snippet" style="display: block;">
+      <div class="snippet_json" style="display: block;">
+        <pre><code class="hljs json">[
+  {}
+]</code></pre>
+        
+      </div>
+  </div>
+</div>
+</div></div></div></span></p>
+            <br>
+            <div class="response-content-type"><div><label data-sw-translate="" for="rct0.35489075475695775">Response Content Type</label>
+<select name="responseContentType" id="rct0.35489075475695775">
+  <option value="*/*">*/*</option>
+</select>
+</div></div>
+            </div>
+
+
+        <form accept-charset="UTF-8" class="sandbox">
+          <div style="margin:0;padding:0;display:inline"></div>
+          <div style="margin:0;padding:0;display:inline"></div>
+          <h4 data-sw-translate="">Response Messages</h4>
+          <table class="fullwidth response-messages">
+            <thead>
+            <tr>
+              <th data-sw-translate="">HTTP Status Code</th>
+              <th data-sw-translate="">Reason</th>
+              <th data-sw-translate="">Response Model</th>
+              <th data-sw-translate="">Headers</th>
+            </tr>
+            </thead>
+            <tbody class="operation-status">
+            <tr><td width="15%" class="code">401</td>
+<td class="markdown"><p>Unauthorized</p>
+</td>
+<td width="50%"><span class="model-signature"><div>    
+</div></span></td>
+<td class="headers">
+  <table>
+    <tbody>
+    </tbody>
+  </table>
+</td></tr><tr><td width="15%" class="code">403</td>
+<td class="markdown"><p>Forbidden</p>
+</td>
+<td width="50%"><span class="model-signature"><div>    
+</div></span></td>
+<td class="headers">
+  <table>
+    <tbody>
+    </tbody>
+  </table>
+</td></tr><tr><td width="15%" class="code">404</td>
+<td class="markdown"><p>Not Found</p>
+</td>
+<td width="50%"><span class="model-signature"><div>    
+</div></span></td>
+<td class="headers">
+  <table>
+    <tbody>
+    </tbody>
+  </table>
+</td></tr></tbody>
+          </table>
+          <div class="sandbox_header">
+            <input class="submit" type="submit" value="Try it out!" data-sw-translate="">
+            <a href="#" class="response_hider" style="" data-sw-translate="">Hide Response</a>
+            <span class="response_throbber" style="display: none;"></span>
+          </div>
+        </form>
+        <div class="response" style="">
+          <h4 class="curl">Curl</h4>
+          <div class="block curl"><pre>curl -X GET --header 'Accept: application/json' 'http://localhost:8001/products'</pre></div>
+          <h4 data-sw-translate="">Request URL</h4>
+          <div class="block request_url"><pre>http://localhost:8001/products</pre></div>
+          <h4 data-sw-translate="">Request Headers</h4>
+          <div class="block request_headers"><pre>{<br>  "Accept": "*/*"<br>}</pre></div>
+          <h4 data-sw-translate="">Response Body</h4>
+          <div class="block response_body hljs json"><pre class="json"><code>[
+  {
+    "<span class="hljs-attr">id</span>": <span class="hljs-number">1</span>,
+    "<span class="hljs-attr">name</span>": <span class="hljs-string">"Yoga Trainer"</span>,
+    "<span class="hljs-attr">description</span>": <span class="hljs-string">"Yoga Training Service Provided By Best Industry Trainer"</span>,
+    "<span class="hljs-attr">category</span>": <span class="hljs-string">"HOME"</span>,
+    "<span class="hljs-attr">rating</span>": <span class="hljs-string">"FIVE"</span>
+  },
+  {
+    "<span class="hljs-attr">id</span>": <span class="hljs-number">1</span>,
+    "<span class="hljs-attr">name</span>": <span class="hljs-string">"Electrician"</span>,
+    "<span class="hljs-attr">description</span>": <span class="hljs-string">"Best &amp; Budget Hire For Electrician"</span>,
+    "<span class="hljs-attr">category</span>": <span class="hljs-string">"HOME"</span>,
+    "<span class="hljs-attr">rating</span>": <span class="hljs-string">"FIVE"</span>
+  },
+  {
+    "<span class="hljs-attr">id</span>": <span class="hljs-number">1</span>,
+    "<span class="hljs-attr">name</span>": <span class="hljs-string">"Beautician"</span>,
+    "<span class="hljs-attr">description</span>": <span class="hljs-string">"Best &amp; Budget Hire For Salon Services"</span>,
+    "<span class="hljs-attr">category</span>": <span class="hljs-string">"OTHER"</span>,
+    "<span class="hljs-attr">rating</span>": <span class="hljs-string">"FIVE"</span>
+  }
+]</code></pre></div>
+          <h4 data-sw-translate="">Response Code</h4>
+          <div class="block response_code"><pre>200</pre></div>
+          <h4 data-sw-translate="">Response Headers</h4>
+          <div class="block response_headers"><pre>{<br>  "connection": "keep-alive",<br>  "content-type": "application/json",<br>  "date": "Sun, 21 Nov 2021 11:42:35 GMT",<br>  "keep-alive": "timeout=60",<br>  "transfer-encoding": "chunked",<br>  "vary": "Origin, Access-Control-Request-Method, Access-Control-Request-Headers"<br>}</pre></div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</li></ul>
+
 
 <b>Order Service:</b> Provides API for managing shopping lists. By default it runs on port 8002.<br/>
 <b>Admin Service:</b> Provides API for managing shopping lists. By default it runs on port 8002.<br/>
